@@ -1,0 +1,20 @@
+[package]
+name = "melter-caster"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bitcoin = { version = "0.29.2", features = ["serde"] }
+chrono = "0.4.23"
+jsonrpsee = { version = "0.16.1", features = ["server", "client", "macros"] }
+num-traits = "0.2.15"
+zcash_address = "0.2.0"
+serde = { version = "1.0.147", features = ["derive"] }
+base64 = "0.21.0"
+anyhow = "1.0.69"
+tokio = { version = "1.25", features = ["rt-multi-thread", "macros"] }
+
+[dev-dependencies]
+quickcheck = "1.0.3"
